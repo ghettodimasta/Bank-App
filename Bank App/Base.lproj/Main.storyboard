@@ -38,6 +38,9 @@
                             <constraint firstItem="QIq-Eo-qOM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cNJ-XI-vNh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountLabel" destination="bBU-uY-C1l" id="ZUK-hK-3rh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
