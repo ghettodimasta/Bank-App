@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CE1786F255D878A001D3533 /* ExcelFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE1786E255D878A001D3533 /* ExcelFormulas.swift */; };
 		8CE3C6012559D2E400E207C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3C6002559D2E400E207C2 /* AppDelegate.swift */; };
 		8CE3C6032559D2E400E207C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3C6022559D2E400E207C2 /* SceneDelegate.swift */; };
 		8CE3C6052559D2E400E207C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3C6042559D2E400E207C2 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8CE1786E255D878A001D3533 /* ExcelFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelFormulas.swift; sourceTree = "<group>"; };
 		8CE3C5FD2559D2E400E207C2 /* Bank App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE3C6002559D2E400E207C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CE3C6022559D2E400E207C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				8CE3C6002559D2E400E207C2 /* AppDelegate.swift */,
 				8CE3C6022559D2E400E207C2 /* SceneDelegate.swift */,
 				8CE3C6042559D2E400E207C2 /* ViewController.swift */,
+				8CE1786E255D878A001D3533 /* ExcelFormulas.swift */,
 				8CE3C6062559D2E400E207C2 /* Main.storyboard */,
 				8CE3C6092559D2E700E207C2 /* Assets.xcassets */,
 				8CE3C60B2559D2E700E207C2 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CE1786F255D878A001D3533 /* ExcelFormulas.swift in Sources */,
 				8CE3C6052559D2E400E207C2 /* ViewController.swift in Sources */,
 				8CE3C6012559D2E400E207C2 /* AppDelegate.swift in Sources */,
 				8CE3C6032559D2E400E207C2 /* SceneDelegate.swift in Sources */,

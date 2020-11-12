@@ -82,13 +82,13 @@
                                             <action selector="textFieldEditingChanged:" destination="let-jx-KUt" eventType="editingChanged" id="V9t-fk-4Fh"/>
                                         </connections>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесячный платеж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c50-yW-733">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесячный платеж" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c50-yW-733">
                                         <rect key="frame" x="0.0" y="175" width="358" height="38.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <color key="textColor" systemColor="systemIndigoColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCo-pJ-Xht">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCo-pJ-Xht">
                                         <rect key="frame" x="0.0" y="233.33333333333331" width="358" height="38.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <color key="textColor" systemColor="systemIndigoColor"/>
@@ -107,6 +107,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Loan" image="creditcard.circle" catalog="system" id="e5N-Xx-ENJ"/>
                     <connections>
+                        <outlet property="monthlyPaymentLabel" destination="LCo-pJ-Xht" id="13S-p5-DYl"/>
                         <outlet property="nperTextField" destination="n56-YG-Oza" id="7Vf-7F-Gp6"/>
                         <outlet property="pvTextField" destination="VJp-NF-7ZO" id="hwQ-Wk-fbc"/>
                         <outlet property="rateTextField" destination="5jU-bS-52M" id="GJs-dI-M0D"/>

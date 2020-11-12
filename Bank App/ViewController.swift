@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     //MARK: - Outlets
     @IBOutlet weak var amountLabel: UILabel?
+    @IBOutlet weak var monthlyPaymentLabel: UILabel?
     @IBOutlet weak var nperTextField: UITextField?
     @IBOutlet weak var pvTextField: UITextField?
     @IBOutlet weak var rateTextField: UITextField?
@@ -21,6 +22,11 @@ class ViewController: UIViewController {
         }
     }
     //MARK: - Methods
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
     func updateAmountLabel(){
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
@@ -30,16 +36,30 @@ class ViewController: UIViewController {
         amountLabel?.text = formatter.string(from: number)
     }
     
+    func updateMonthlyAmountLabel(){
+        monthlyPaymentLabel?.text = nil
+        
+        guard let nper = Double(nperTextField?.text ?? "") else { return }
+        guard let pv = Double(pvTextField?.text ?? "") else { return }
+        guard let rate = Double(rateTextField?.text ?? "") else { return }
+        
+        let monthlyPayment = abs(ExcelFormulas.pmt(rate: rate / 100 / 12, nper: nper, pv: pv))
+        monthlyPaymentLabel?.text = "\(monthlyPayment)"
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         updateAmountLabel()
+        updateMonthlyAmountLabel()
     } 
     
+    //MARK: - Actions
     @IBAction func textFieldEditingChanged(_ sender: UITextField) {
-        print(sender.text ?? "nil")
+        updateMonthlyAmountLabel()
+            
     }
     
 }
