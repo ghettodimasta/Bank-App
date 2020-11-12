@@ -50,7 +50,7 @@
         <!--Loan-->
         <scene sceneID="Cqo-Ph-7Ti">
             <objects>
-                <viewController id="let-jx-KUt" sceneMemberID="viewController">
+                <viewController id="let-jx-KUt" customClass="ViewController" customModule="Bank_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TYp-E8-Iw5">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,16 +62,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="38.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="let-jx-KUt" eventType="editingChanged" id="Ajs-qO-jZV"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Срок в мес." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n56-YG-Oza">
                                         <rect key="frame" x="0.0" y="58.333333333333329" width="358" height="38.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="let-jx-KUt" eventType="editingChanged" id="3Cw-Bm-4oi"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ставка" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5jU-bS-52M">
                                         <rect key="frame" x="0.0" y="116.66666666666664" width="358" height="38.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="textFieldEditingChanged:" destination="let-jx-KUt" eventType="editingChanged" id="V9t-fk-4Fh"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесячный платеж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c50-yW-733">
                                         <rect key="frame" x="0.0" y="175" width="358" height="38.333333333333343"/>
@@ -97,6 +106,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Loan" image="creditcard.circle" catalog="system" id="e5N-Xx-ENJ"/>
+                    <connections>
+                        <outlet property="nperTextField" destination="n56-YG-Oza" id="7Vf-7F-Gp6"/>
+                        <outlet property="pvTextField" destination="VJp-NF-7ZO" id="hwQ-Wk-fbc"/>
+                        <outlet property="rateTextField" destination="5jU-bS-52M" id="GJs-dI-M0D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeT-NU-PmM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,6 +122,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gUM-5B-s0c" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="evy-9F-o1X">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
